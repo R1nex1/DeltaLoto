@@ -1,3 +1,6 @@
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 public class Statistika {
     // Statistika loogika siia
     private int mangudeArv;
@@ -94,4 +97,11 @@ public class Statistika {
         setKasum(kasum + i - getValjaMakstudVoidud());
     }
 
+    public void manguStatistikaSalvesti () {
+        PrintWriter statistika = new PrintWriter(System.out, true);
+    }
+
+    public void manguStatistikaLaadija () {
+        Scanner statistika = new Scanner(System.in);
+    }
 }
