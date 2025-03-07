@@ -1,3 +1,6 @@
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 public class Mangija {
     // Mangija info siia
     private String nimi;
@@ -22,6 +25,14 @@ public class Mangija {
 
     public void setKassa(Double kassa) {
         this.kassa = kassa;
+    }
+
+    public void salvestaMangija() {
+        PrintWriter mangija = new PrintWriter(System.out, true);
+    }
+
+    public void laeMangija() {
+        Scanner mangija = new Scanner(System.in);
     }
 
     @Override
