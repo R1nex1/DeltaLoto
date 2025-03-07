@@ -1,7 +1,35 @@
 public class Mangija {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-        System.out.println("Hello again");
+
+    // Mangija info siia
+    private String nimi;
+    private Double kassa;
+
+    public Mangija(String nimi, Double kassa) {
+        this.nimi = nimi;
+        this.kassa = kassa;
     }
-    // Siia mängija loogika ja andmed
+
+    public String getNimi() {
+        return nimi;
+    }
+
+    public void setNimi(String nimi) {
+        this.nimi = nimi;
+    }
+
+    public Double getKassa() {
+        return kassa;
+    }
+
+    public void setKassa(Double kassa) {
+        this.kassa = kassa;
+    }
+
+    @Override
+    public String toString() {
+        return "Mangija{" +
+                "nimi='" + nimi + '\'' +
+                ", kassa=" + kassa +
+                '}';
+    }
 }
