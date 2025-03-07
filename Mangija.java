@@ -2,6 +2,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Mangija {
+
     // Mangija info siia
     private String nimi;
     private Double kassa;
