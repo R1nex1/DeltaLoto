@@ -4,20 +4,34 @@ import java.util.Scanner;
 public class Mangija {
 
     // Mangija info siia
-    private String nimi;
+    private String eesNimi;
+    private String pereNimi;
     private Double kassa;
+    private int ostetudPiletid;
+    private int mangitudMangud;
 
-    public Mangija(String nimi, Double kassa) {
-        this.nimi = nimi;
+    public Mangija(String eesNimi, String pereNimi, Double kassa, int ostetudPiletid, int mangitudMangud) {
+        this.eesNimi = eesNimi;
+        this.pereNimi = pereNimi;
         this.kassa = kassa;
+        this.ostetudPiletid = ostetudPiletid;
+        this.mangitudMangud = mangitudMangud;
     }
 
-    public String getNimi() {
-        return nimi;
+    public String getEesNimi() {
+        return eesNimi;
     }
 
-    public void setNimi(String nimi) {
-        this.nimi = nimi;
+    public void setEesNimi(String nimi) {
+        this.eesNimi = eesNimi;
+    }
+
+    public String getPereNimi() {
+        return pereNimi;
+    }
+
+    public void setPereNimi(String pereNimi) {
+        this.pereNimi = pereNimi;
     }
 
     public Double getKassa() {
@@ -28,6 +42,22 @@ public class Mangija {
         this.kassa = kassa;
     }
 
+    public int getOstetudPiletid() {
+        return ostetudPiletid;
+    }
+
+    public void setOstetudPiletid(int ostetudPiletid) {
+        this.ostetudPiletid = ostetudPiletid;
+    }
+
+    public int getMangitudMangud() {
+        return mangitudMangud;
+    }
+
+    public void setMangitudMangud(int mangitudMangud) {
+        this.mangitudMangud = mangitudMangud;
+    }
+
     public void salvestaMangija() {
         PrintWriter mangija = new PrintWriter(System.out, true);
     }
@@ -36,10 +66,14 @@ public class Mangija {
         Scanner mangija = new Scanner(System.in);
     }
 
+    public void mangjaInfo() {
+        System.out.println(getEesNimi() + " hetkeseis: " + getKassa() + "€");
+    }
+
     @Override
     public String toString() {
         return "Mangija{" +
-                "nimi='" + nimi + '\'' +
+                "nimi='" + eesNimi + '\'' +
                 ", kassa=" + kassa +
                 '}';
     }
