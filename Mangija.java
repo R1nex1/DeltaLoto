@@ -1,3 +1,6 @@
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -59,11 +62,32 @@ public class Mangija {
     }
 
     public void salvestaMangija() {
-        PrintWriter mangija = new PrintWriter(System.out, true);
+        try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("mangijad.txt", true), "UTF-8"))) {
+            writer.println(eesNimi + "," + pereNimi + "," + kassa + "," + ostetudPiletid + "," + mangitudMangud);
+        } catch (Exception e) {
+            System.out.println("Viga, mängija salvestamine ebaõnnestus: " + e.getMessage());
+        }
     }
 
-    public void laeMangija() {
-        Scanner mangija = new Scanner(System.in);
+    public void laeMangija(String eesNimi, String pereNimi) {
+        try (Scanner scanner = new Scanner(new FileReader("mangijad.txt"))) {
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                String[] data = line.split(",");
+                if (data[0].equals(eesNimi) && data[1].equals(pereNimi)) {
+                    this.eesNimi = data[0];
+                    this.pereNimi = data[1];
+                    this.kassa = Double.parseDouble(data[2]);
+                    this.ostetudPiletid = Integer.parseInt(data[3]);
+                    this.mangitudMangud = Integer.parseInt(data[4]);
+                    System.out.println("Mängija andmed laetud: " + this.toString());
+                    return;
+                }
+            }
+            System.out.println("Mängijat ei leitud.");
+        } catch (Exception e) {
+            System.out.println("Viga, mängija laadimine ebaõnnestus: " + e.getMessage());
+        }
     }
 
     public void mangjaInfo() {

@@ -1,5 +1,9 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.FileReader;
+import java.io.File;
 
 public class Statistika {
     // Statistika loogika siia
@@ -97,11 +101,31 @@ public class Statistika {
         setKasum(kasum + i - getValjaMakstudVoidud());
     }
 
-    public void manguStatistikaSalvesti () {
-        PrintWriter statistika = new PrintWriter(System.out, true);
+
+    public void salvestaStatistika() {
+        try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("statistika.txt", false), "UTF-8"))) {
+            writer.println(mangudeArv + "," + piletiteArv + "," + voiduPiletiteArv + "," + jackpotideArv + "," + valjaMakstudVoidud + "," + piletuMuugiTulu + "," + kasum);
+        } catch (Exception e) {
+            System.out.println("Viga, statistika salvestamine ebaõnnestus: " + e.getMessage());
+        }
     }
 
-    public void manguStatistikaLaadija () {
-        Scanner statistika = new Scanner(System.in);
+    public void laeStatistika() {
+        try (Scanner scanner = new Scanner(new FileReader("statistika.txt"))) {
+            if (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                String[] data = line.split(",");
+                this.mangudeArv = Integer.parseInt(data[0]);
+                this.piletiteArv = Integer.parseInt(data[1]);
+                this.voiduPiletiteArv = Integer.parseInt(data[2]);
+                this.jackpotideArv = Integer.parseInt(data[3]);
+                this.valjaMakstudVoidud = Double.parseDouble(data[4]);
+                this.piletuMuugiTulu = Double.parseDouble(data[5]);
+                this.kasum = Double.parseDouble(data[6]);
+                System.out.println("Statistika andmed laetud.");
+            }
+        } catch (Exception e) {
+            System.out.println("Viga, statistika laadimine ebaõnnestus: " + e.getMessage());
+        }
     }
 }
