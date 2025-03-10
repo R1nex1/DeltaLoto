@@ -1,11 +1,6 @@
 public class ManguHaldur {
     public static void main(String[] args) {
-        int[] voidunumbrid = Loto.manguloosimine();
-        System.out.println("Võidunumbrid on : ");
-        for (int num : voidunumbrid) {
-            System.out.print(num + " ");
-
-        }
+        Loto loto = new Loto(100, 10);
+        System.out.println("Võidunumbrid: " + loto.getVoidunumbrid()); // Call on object, not class
     }
-    // Siia mängu üldine voog. Suhtlus Mangija ja Loto klasside vahel
 }

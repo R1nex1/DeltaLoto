@@ -8,6 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Loto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ManguHaldur.java" beforeDir="false" afterPath="$PROJECT_DIR$/ManguHaldur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/Loto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DeltaLoto/Loto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/Mangija.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DeltaLoto/Mangija.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/ManguHaldur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DeltaLoto/ManguHaldur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/Statistika.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DeltaLoto/Statistika.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,17 +19,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AlekseiSamrai"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlekseiSamrai&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/AlekseiSamrai/DeltaLoto.git",
+    "url": "https://github.com/R1nex1/DeltaLoto",
     "accountId": "96318a23-19c2-4c8a-a515-482a368e0573"
   }
 }]]></component>
@@ -40,6 +49,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Loto.executor": "Run",
     "Application.Mangija.executor": "Run",
     "Application.ManguHaldur.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -57,6 +67,13 @@
   }
 }]]></component>
   <component name="RunManager" selected="Application.ManguHaldur">
+    <configuration name="Loto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Loto" />
+      <module name="DeltaLoto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Mangija" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-23.0.2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -76,6 +93,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ManguHaldur" />
+        <item itemvalue="Application.Loto" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +115,7 @@
       <updated>1741334904529</updated>
       <workItem from="1741334905772" duration="260000" />
       <workItem from="1741336656402" duration="3463000" />
+      <workItem from="1741630284966" duration="1480000" />
     </task>
     <task id="LOCAL−00001" summary="TestCommit">
       <option name="closed" value="true" />
@@ -117,6 +136,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TestCommit" />
