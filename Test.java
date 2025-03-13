@@ -7,6 +7,7 @@ public class Test {
             file.delete();
         }
 
+        //kommentaar testimiseks githubiga
         Statistika lotoStats = new Statistika(0, 0, 0, 0, new int[5], 0.0, 0.0, 0.0);
 
         for (int i = 0; i < 10; i++) {
