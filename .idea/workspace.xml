@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f08e1e-4b68-4530-b183-3ec98bfca2a3" name="Changes" comment="TestCommit">
-      <change afterPath="$PROJECT_DIR$/Laadija.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Salvestaja.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Statistika.java" beforeDir="false" afterPath="$PROJECT_DIR$/Statistika.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/Statistika.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DeltaLoto/Statistika.class" afterDir="false" />
-    </list>
+    <list default="true" id="59f08e1e-4b68-4530-b183-3ec98bfca2a3" name="Changes" comment="TestCommit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
