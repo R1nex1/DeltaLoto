@@ -12,6 +12,15 @@
     </list>
     <list id="a99e4c2d-c01f-40da-90bd-c8b1c149892f" name="Changes by samrai" comment="">
       <change beforePath="$PROJECT_DIR$/ManguHaldur.java" beforeDir="false" afterPath="$PROJECT_DIR$/ManguHaldur.java" afterDir="false" />
+    <list default="true" id="59f08e1e-4b68-4530-b183-3ec98bfca2a3" name="Changes" comment="Test 10.03">
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/DeltaLoto.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/Kasutajaliides.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +28,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -29,7 +43,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AlekseiSamrai/DeltaLoto.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/R1nex1/DeltaLoto&quot;,
     &quot;accountId&quot;: &quot;96318a23-19c2-4c8a-a515-482a368e0573&quot;
   }
 }</component>
@@ -53,12 +67,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Loto.executor": "Run",
+
     "Application.Mangija.executor": "Run",
     "Application.ManguHaldur.executor": "Run",
     "Application.Test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+
     "git-widget-placeholder": "R1nex__puu",
+    "git-widget-placeholder": "Merging Aleksei",
+
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/samrai/Documents/GitHub/DeltaLoto",
@@ -70,7 +89,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+
   <component name="RunManager" selected="Application.Test">
+
+  <component name="RunManager" selected="Application.ManguHaldur">
+    <configuration name="Loto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Loto" />
+      <module name="DeltaLoto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+
     <configuration name="Mangija" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-23.0.2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -98,6 +128,8 @@
       <list>
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.ManguHaldur" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Loto" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +151,14 @@
       <updated>1741334904529</updated>
       <workItem from="1741334905772" duration="260000" />
       <workItem from="1741336656402" duration="3463000" />
+
       <workItem from="1741940042939" duration="3774000" />
+
+      <workItem from="1741630284966" duration="2187000" />
+      <workItem from="1741633469832" duration="325000" />
+      <workItem from="1741939836271" duration="653000" />
+      <workItem from="1741940521133" duration="2632000" />
+
     </task>
     <task id="LOCAL−00001" summary="TestCommit">
       <option name="closed" value="true" />
@@ -135,14 +174,33 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1741336609954</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Test 10.03">
+      <option name="closed" value="true" />
+      <created>1741631881553</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1741631881553</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TestCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="TestCommit" />
+    <MESSAGE value="Test 10.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 10.03" />
   </component>
 </project>
