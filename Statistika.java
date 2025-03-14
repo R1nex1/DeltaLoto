@@ -130,8 +130,7 @@ public class Statistika implements Laadija, Salvestaja {
         return erinevadVoitudeArv;
     }
 
-    public void genereeriStatistika2() {
-        int praegusedPiletid = (int) (Math.random() * (3500 - 2000 + 1) + 2000);
+    public void genereeriStatistika2(int piletid) {
 
         // kaalud
         double kaotajadKaal = 0.448;
@@ -142,7 +141,7 @@ public class Statistika implements Laadija, Salvestaja {
 
         int[] pallid = new int[5]; // massiiv erinevate loosimiste võitude arvude statistika jaoks
 
-        for (int i = 0; i < praegusedPiletid; i++) {
+        for (int i = 0; i < piletid; i++) {
             double suva = Math.random();
             if (suva < kaotajadKaal) pallid[0]++;
             else if (suva < kaotajadKaal + kaksKaal) pallid[1]++;
@@ -155,7 +154,7 @@ public class Statistika implements Laadija, Salvestaja {
         int praegujackpot = pallid[4]; // jackpotideArv
         int valjaMakse = praegusedVoidupiletid * 10; // siia vaaja mingi parem asi teha
 
-        System.out.println(", piletiteArv=" + praegusedPiletid +
+        System.out.println("piletiteArv=" + praegusedPiletid +
                 ", voiduPiletiteArv=" + praegusedVoidupiletid +
                 ", jackpotideArv=" + praegujackpot +
                 ", erinevadVoitudeArv=" + Arrays.toString(pallid) +
