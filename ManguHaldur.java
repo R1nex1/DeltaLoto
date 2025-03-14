@@ -7,6 +7,7 @@ public class ManguHaldur {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int piletiteArv = (int) (Math.random() * (3500 - 2000 + 1) + 2000);
 
         // Küsimus kasutajale: mitu Eurojackpoti piletit soovitakse osta?
         System.out.print("Mitu Eurojackpoti piletit soovite osta? ");
@@ -72,6 +73,10 @@ public class ManguHaldur {
             }
         }
         scanner.close();
+
+        System.out.println();
+        Statistika taust = new Statistika(0, 0, 0, 0, new int[5], 0, 0, 0);
+        taust.genereeriStatistika2(piletiteArv);
     }
 
     // Meetod kasutajalt numbrite küsimiseks
@@ -93,6 +98,17 @@ public class ManguHaldur {
             } else {
                 System.out.println("Vale vahemik! Palun sisestage number vahemikus 1-50.");
             }
+        }
+        return numbers;
+    }
+
+
+
+    // Meetod juhuslike numbrite genereerimiseks
+    private static Set<Integer> generateRandomNumbers() {
+        Set<Integer> numbers = new HashSet<>();
+        while (numbers.size() < 5) {
+            numbers.add(random.nextInt(50) + 1);
         }
         return numbers;
     }
