@@ -59,6 +59,7 @@ public class Loto {
         while (numbrid.size() < 5) {
             numbrid.add(random.nextInt(50) + 1);
         }
+        System.out.println("Siin on võidunumbrid: " + numbrid);
         return numbrid;
     }
 

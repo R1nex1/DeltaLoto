@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f08e1e-4b68-4530-b183-3ec98bfca2a3" name="Changes" comment="TestCommit">
+    <list default="true" id="59f08e1e-4b68-4530-b183-3ec98bfca2a3" name="Changes" comment="Test 10.03">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kasutajaliides.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kasutajaliides.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Loto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mangija.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mangija.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ManguHaldur.java" beforeDir="false" afterPath="$PROJECT_DIR$/ManguHaldur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Statistika.java" beforeDir="false" afterPath="$PROJECT_DIR$/Statistika.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/Loto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DeltaLoto/Loto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/Mangija.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DeltaLoto/Mangija.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DeltaLoto/ManguHaldur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DeltaLoto/ManguHaldur.class" afterDir="false" />
@@ -32,12 +36,12 @@
     &quot;assignee&quot;: &quot;AlekseiSamrai&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/R1nex1/DeltaLoto",
-    "accountId": "96318a23-19c2-4c8a-a515-482a368e0573"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/R1nex1/DeltaLoto&quot;,
+    &quot;accountId&quot;: &quot;96318a23-19c2-4c8a-a515-482a368e0573&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -52,6 +56,7 @@
     "Application.Loto.executor": "Run",
     "Application.Mangija.executor": "Run",
     "Application.ManguHaldur.executor": "Run",
+    "Application.Test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Aleksei",
@@ -90,9 +95,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="DeltaLoto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ManguHaldur" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Loto" />
       </list>
     </recent_temporary>
@@ -115,7 +128,10 @@
       <updated>1741334904529</updated>
       <workItem from="1741334905772" duration="260000" />
       <workItem from="1741336656402" duration="3463000" />
-      <workItem from="1741630284966" duration="1480000" />
+      <workItem from="1741630284966" duration="2187000" />
+      <workItem from="1741633469832" duration="325000" />
+      <workItem from="1741939836271" duration="653000" />
+      <workItem from="1741940521133" duration="2632000" />
     </task>
     <task id="LOCAL−00001" summary="TestCommit">
       <option name="closed" value="true" />
@@ -131,7 +147,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1741336609954</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Test 10.03">
+      <option name="closed" value="true" />
+      <created>1741631881553</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1741631881553</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +173,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TestCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="TestCommit" />
+    <MESSAGE value="Test 10.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 10.03" />
   </component>
 </project>
