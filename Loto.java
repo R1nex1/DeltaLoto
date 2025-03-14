@@ -25,5 +25,13 @@ public class Loto {
         return voidunumbrid;
     }
 
-    // Siia loto mängu loogika
+    // genereeri mängu statistika mängude arv sea 1ks statistikas tõsta mängude arvu 1 võrra
+
+    public void abi() {
+        Statistika praeguneMang = new Statistika(0, 0, 0, 0, new int[5], 0 , 0 , 0);
+        praeguneMang.genereeriStatistika2();
+    }
+
+    // Auhinnafondi jaotus
+
 }
