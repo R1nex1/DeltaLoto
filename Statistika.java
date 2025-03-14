@@ -130,9 +130,41 @@ public class Statistika implements Laadija, Salvestaja {
         return erinevadVoitudeArv;
     }
 
+    public void genereeriStatistika2() {
+        int praegusedPiletid = (int) (Math.random() * (3500 - 2000 + 1) + 2000);
+
+        // kaalud
+        double kaotajadKaal = 0.448;
+        double kaksKaal = 0.448;
+        double kolmKaal = 0.103;
+        double neliKaal = 0.00029;
+        double viisKaal = 0.000001;
+
+        int[] pallid = new int[5]; // massiiv erinevate loosimiste võitude arvude statistika jaoks
+
+        for (int i = 0; i < praegusedPiletid; i++) {
+            double suva = Math.random();
+            if (suva < kaotajadKaal) pallid[0]++;
+            else if (suva < kaotajadKaal + kaksKaal) pallid[1]++;
+            else if (suva < kaotajadKaal + kaksKaal + kolmKaal) pallid[2]++;
+            else if (suva < kaotajadKaal + kaksKaal + kolmKaal + neliKaal) pallid[3]++;
+            else if (suva < kaotajadKaal + kaksKaal + kolmKaal + neliKaal + viisKaal) pallid[4]++;
+        }
+
+        int praegusedVoidupiletid = pallid[1] + pallid[2] + pallid[3] + pallid[4]; // voiduPiletiteArv
+        int praegujackpot = pallid[4]; // jackpotideArv
+        int valjaMakse = praegusedVoidupiletid * 10; // siia vaaja mingi parem asi teha
+
+        System.out.println(", piletiteArv=" + praegusedPiletid +
+                ", voiduPiletiteArv=" + praegusedVoidupiletid +
+                ", jackpotideArv=" + praegujackpot +
+                ", erinevadVoitudeArv=" + Arrays.toString(pallid) +
+                ", valjaMakstudVoidud=" + valjaMakse);
+    }
+
     public void genereeriStatistika() {
         setMangudeArv((int) (Math.random() * 15) + 1); // mängude arv, min 1 mäng toimunud
-        setPiletiteArv((int) (Math.random() * (1500000 - 1000000 + 1) + 1000000) * getMangudeArv()); // piletite arv
+        setPiletiteArv((int) (Math.random() * (3500 - 2000 + 1) + 2000) * getMangudeArv()); // piletite arv
         setPiletuMuugiTulu(getPiletiteArv() * 5.0);
 
         // kaalud
@@ -155,7 +187,7 @@ public class Statistika implements Laadija, Salvestaja {
 
         setVoiduPiletiteArv(pallid[1] + pallid[2] + pallid[3] + pallid[4]); // voiduPiletiteArv
         setJackpotideArv(pallid[4]); // jackpotideArv
-        setValjaMakstudVoidud((int) (Math.random() * 10) * getVoiduPiletiteArv()); // siia vaaja mingi parem asi teha
+        setValjaMakstudVoidud(10 * getVoiduPiletiteArv()); // siia vaaja mingi parem asi teha
 
         setKasum(getPiletuMuugiTulu() - getValjaMakstudVoidud());
 

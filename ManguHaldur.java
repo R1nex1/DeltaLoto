@@ -4,6 +4,7 @@ public class ManguHaldur {
     private static final Random random = new Random();
     private static int ticketCounter = 1; // Unikaalne piletite ID loendur
 
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -92,15 +93,6 @@ public class ManguHaldur {
             } else {
                 System.out.println("Vale vahemik! Palun sisestage number vahemikus 1-50.");
             }
-        }
-        return numbers;
-    }
-
-    // Meetod juhuslike numbrite genereerimiseks
-    private static Set<Integer> generateRandomNumbers() {
-        Set<Integer> numbers = new HashSet<>();
-        while (numbers.size() < 5) {
-            numbers.add(random.nextInt(50) + 1);
         }
         return numbers;
     }
